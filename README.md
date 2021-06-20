@@ -1,3 +1,10 @@
+# ModHeader fork which adds a default filter for localhost only if the import doesn't have one
+### If you need mod header to always have localhost as a filter, this is the fork for you!
+### On every pasted import file, this will automatically be added to filters array if there aren't any:
+`[{ comment: 'localhost filter', enabled: true, resourceType: [], type: 'urls', urlRegex: 'localhost*' }]`
+
+### Motivation: We have a tool at my employer that exports headers in ModHeader format, but for most we only need the headers to be added for localhost otherwise it affects our SSO on other sites
+
 # ModHeader browser extension
 
 <h3 align="center">

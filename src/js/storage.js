@@ -55,6 +55,18 @@ export function fixProfiles(profiles) {
         isMutated = true;
       }
     }
+
+    if (profile.filters.length === 0) {
+      profile.filters = [{
+        comment: 'localhost filter',
+        enabled: true,
+        resourceType: [],
+        type: 'urls',
+        urlRegex: 'localhost*'
+      }];
+      isMutated = true;
+    }
+
     if (!profile.backgroundColor) {
       profile.backgroundColor = generateBackgroundColor();
       isMutated = true;

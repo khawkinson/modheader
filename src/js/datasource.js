@@ -335,7 +335,7 @@ export function selectProfile(profileIndex) {
 
 export function removeProfile(profile) {
   latestProfiles.splice(latestProfiles.indexOf(profile), 1);
-  if (latestProfiles.length == 0) {
+  if (latestProfiles.length === 0) {
     latestProfiles = [createProfile()];
   }
   setProfilesAndIndex(latestProfiles, latestProfiles.length - 1);

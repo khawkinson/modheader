@@ -18,7 +18,7 @@
     const reader = new FileReader();
     reader.onload = event => {
       const importText = event.target.result;
-      const importedProfiles = JSON.parse(importText);
+      let importedProfiles = JSON.parse(importText);
       if (!lodashIsArray(importedProfiles)) {
         importedProfiles = [importedProfiles];
       }
