@@ -313,6 +313,8 @@ function setProfilesAndIndex(
   ignoringChangeStack = false;
 }
 
+// this is some horrible code.
+
 export function importProfiles(importProfiles) {
   fixProfiles(importProfiles);
   const innerProfiles = latestProfiles.concat(importProfiles);
