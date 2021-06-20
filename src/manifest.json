@@ -1,8 +1,7 @@
 {
-  "name": "ModHeader",
+  "name": "ModHeader-khawkinson",
   "version": "3.1.22",
   "manifest_version": 2,
-  "homepage_url": "https://bewisse.com/modheader/",
   "description": "Modify HTTP request and response headers",
   "background": {
     "scripts": ["background.bundle.js"]
